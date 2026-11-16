@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Barata Silva &amp; Martinewski · Painel de mídia paga</title>
+<meta name="robots" content="noindex" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#070E1A;color:#E8EDF5;-webkit-font-smoothing:antialiased}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5}
+::selection{background:#C9A227;color:#070E1A}
+main{max-width:1340px;margin:0 auto;padding:40px 22px 90px}
+header{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.07)}
+.marca{display:flex;align-items:center;gap:11px;margin-bottom:9px}
+.marca span{font-family:Georgia,'Times New Roman',serif;font-size:19px;letter-spacing:.6px}
+h1{font-size:29px;font-weight:650;letter-spacing:-.9px}
+.sub{color:#7F93AE;font-size:13px;margin-top:7px}
+.lab{display:block;color:#7F93AE;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:7px}
+select{background:#111C30;color:#E8EDF5;border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:11px 14px;font-size:14.5px;min-width:230px;outline:none;cursor:pointer;font-family:inherit}
+.perinfo{color:#7F93AE;font-size:12px;margin-top:7px;text-align:right}
+nav{display:flex;gap:4px;margin:26px 0 30px;flex-wrap:wrap}
+nav button{background:transparent;color:#7F93AE;border:1px solid transparent;border-radius:10px;padding:11px 18px;font-size:14.5px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:9px;font-family:inherit}
+nav button.on{background:#111C30;color:#E8EDF5;border-color:rgba(201,162,39,.38);font-weight:600}
+.tag{background:rgba(201,162,39,.16);color:#C9A227;font-size:10.5px;font-weight:700;letter-spacing:.7px;padding:3px 7px;border-radius:5px;text-transform:uppercase}
+.grid1{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:12px;margin-bottom:12px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:34px}
+.k{background:#0D1627;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:18px 18px 15px;min-height:118px;display:flex;flex-direction:column;justify-content:space-between}
+.k.hero{background:linear-gradient(160deg,#152743 0%,#0D1627 70%);border-color:rgba(201,162,39,.35);padding:22px 22px 18px;min-height:132px}
+.k .kl{color:#7F93AE;font-size:11.5px;font-weight:600;letter-spacing:1.1px;text-transform:uppercase}
+.k.hero .kl{color:#C9A227}
+.k .kv{font-size:26px;font-weight:650;letter-spacing:-.8px;margin:10px 0 8px;line-height:1.1}
+.k.hero .kv{font-size:34px}
+.d{font-size:12.5px;font-weight:600}
+.d .m{color:#7F93AE;font-weight:400}
+.up{color:#49C98A}.down{color:#E8705F}.flat{color:#7F93AE}
+section.card{background:#0D1627;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:22px 22px 12px;margin-bottom:34px}
+.chead{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px}
+.ct{font-size:16px;font-weight:600}
+.cs{color:#7F93AE;font-size:12.5px;margin-top:3px}
+.leg{display:flex;gap:18px;align-items:center;font-size:12.5px;color:#7F93AE}
+.sw1{display:inline-block;width:11px;height:11px;background:rgba(201,162,39,.55);border-radius:2px;margin-right:7px;vertical-align:-1px}
+.sw2{display:inline-block;width:11px;height:2.5px;background:#5FA8FF;margin-right:7px;vertical-align:3px}
+.tt{font-size:16px;font-weight:600;margin-bottom:13px}
+.tt span{color:#7F93AE;font-weight:400;font-size:13.5px}
+.wrap{overflow-x:auto;border:1px solid rgba(255,255,255,.07);border-radius:14px;background:#0D1627}
+table{width:100%;border-collapse:collapse;min-width:940px}
+th{text-align:right;padding:11px 12px;color:#7F93AE;font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.07)}
+td{text-align:right;padding:13px 12px;font-size:13.5px;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.07)}
+th.l,td.l{text-align:left;min-width:300px;white-space:normal}
+.cn{display:flex;align-items:flex-start;gap:9px}
+.dot{width:7px;height:7px;border-radius:99px;margin-top:6px;flex-shrink:0;background:#45566E}
+.dot.on{background:#49C98A}
+.cm{display:block;color:#7F93AE;font-size:11.5px;margin-top:3px}
+.nota{color:#7F93AE;font-size:12.5px;margin-top:20px;max-width:900px;line-height:1.65}
+.bg{color:#7F93AE;font-size:11.5px;font-weight:600;letter-spacing:1.1px;text-transform:uppercase;margin-bottom:14px}
+.bi{background:#0D1627;border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start;margin-bottom:10px}
+.bi.ok{border-color:rgba(73,201,138,.18)}
+.bic{width:24px;height:24px;border-radius:99px;flex-shrink:0;display:grid;place-items:center;font-size:12px;background:rgba(201,162,39,.14);color:#C9A227}
+.bi.ok .bic{background:rgba(73,201,138,.14);color:#49C98A}
+.bit{font-size:15px;font-weight:600}
+.bid{color:#7F93AE;font-size:13.5px;margin-top:4px}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid rgba(255,255,255,.07);color:#7F93AE;font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.hide{display:none}
+.inv{visibility:hidden}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div>
+    <div class="marca">
+      <svg width="22" height="26" viewBox="0 0 22 26" fill="none"><path d="M11 1L21 7v12l-10 6L1 19V7l10-6z" stroke="#C9A227" stroke-width="1.3"/><path d="M11 8l5 3v6l-5 3-5-3v-6l5-3z" fill="#C9A227" fill-opacity=".85"/></svg>
+      <span>BARATA SILVA &amp; MARTINEWSKI</span>
+    </div>
+    <h1>Painel de mídia paga</h1>
+    <div class="sub" id="sub"></div>
+  </div>
+  <div id="selbox">
+    <label class="lab" for="per">Período</label>
+    <select id="per"></select>
+    <div class="perinfo" id="perinfo"></div>
+  </div>
+</header>
+<nav id="nav"></nav>
+<div id="conteudo"></div>
+<footer><span id="rodape"></span><span>Dados extraídos da API oficial do Meta Ads</span></footer>
+</main>
+<script>
+
+var DATA = {"p":[{"i":"d7","l":"Últimos 7 dias","r":"09/11 a 15/11","c":"02/11 a 08/11","g":{"multi":{"a":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,747.87,7830,6212,167,20]],"b":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,732.35,10639,8670,210,20]]},"trab":{"a":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,317.49,18960,12847,399,41]],"b":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,312.18,20476,12944,419,31]]},"outros":{"a":[],"b":[]}}},{"i":"d14","l":"Últimos 14 dias","r":"02/11 a 15/11","c":"19/10 a 01/11","g":{"multi":{"a":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,1480.22,18469,13646,377,40]],"b":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,1467.16,25945,18461,446,38]]},"trab":{"a":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,629.67,39436,21717,818,72]],"b":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,633.12,57378,31389,988,67]]},"outros":{"a":[],"b":[]}}},{"i":"d30","l":"Últimos 30 dias","r":"17/10 a 15/11","c":"17/09 a 16/10","g":{"multi":{"a":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,3162.5,48387,32364,886,79]],"b":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,1976.02,41659,29709,677,52],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS ESTÁTICO ELEVENLABS",0,2,696.88,55330,24647,592,100],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS ESTÁTICO",0,2,318.68,19537,10456,211,28],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS (cópia)",0,2,204.73,2947,1499,42,6],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 2% LISTA 01 POEHMA",0,0,182.33,4148,4109,38,2],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 3% LISTA 01 POEHMA",0,0,167.85,4443,4443,50,1],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 1% LISTA 01 POEHMA",0,0,111.13,2400,2281,24,1],["[BARATA][ONGOING][WHATSAPP] - MULTIPROPRIEDADE - CONVERSAS",0,2,41.0,531,478,12,5],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE (teste)",0,0,9.94,231,218,1,0]]},"trab":{"a":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,1355.96,106201,47431,1964,151]],"b":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,1329.72,128673,52850,2230,121]]},"outros":{"a":[],"b":[]}}},{"i":"mes","l":"Este mês","r":"01/11 a 16/11","c":"16/10 a 31/10","g":{"multi":{"a":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,1665.04,21330,15863,414,43]],"b":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,1638.22,28833,19933,494,38]]},"trab":{"a":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,705.17,43993,23460,915,81]],"b":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,706.6,66577,34792,1136,72]]},"outros":{"a":[],"b":[]}}},{"i":"mes_ant","l":"Mês passado","r":"01/10 a 31/10","c":"01/09 a 30/09","g":{"multi":{"a":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,3227.61,62852,40242,1060,77],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 2% LISTA 01 POEHMA",0,0,182.33,4148,4109,38,2],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 3% LISTA 01 POEHMA",0,0,167.85,4443,4443,50,1],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 1% LISTA 01 POEHMA",0,0,111.13,2400,2281,24,1]],"b":[["[BARATA][ONGOING][WHATSAPP] - MULTIPROPRIEDADE - CONVERSAS",0,2,1197.43,42602,13041,473,74],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,910.78,14405,10817,317,25],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS ESTÁTICO ELEVENLABS",0,2,696.88,55330,24647,592,100],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS ESTÁTICO",0,2,318.68,19537,10456,211,28],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS (cópia)",0,2,204.73,2947,1499,42,6],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Contratos fechados kommo 1% - Vídeo Samanta R1",0,0,37.73,445,393,6,0],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE (teste)",0,0,9.94,231,218,1,0]]},"trab":{"a":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,1379.02,138358,58505,2357,126]],"b":[["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,969.21,72480,35623,1306,100],["[BARATA][ONGOING][YAYFORM] - TRABALHISTA - GENERICA",0,1,391.8,15487,11506,262,23]]},"outros":{"a":[],"b":[]}}},{"i":"max","l":"Máximo","r":"desde o início da conta","c":null,"g":{"multi":{"a":[["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - VÍDEO BRUNO",0,0,22784.83,582143,230962,7439,759],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE",1,0,10163.83,167887,98502,3141,254],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Estáticos",0,0,8823.92,255753,101573,3045,277],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Semelhante 1% outubro - Vídeo Carlos R1",0,0,3726.16,73755,43740,1290,135],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Semelhante 1% contratos kommo - Vídeo Carlos R4",0,0,2708.0,46326,22550,788,71],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Semelhante 1% contratos kommo - Vídeo Carlos R1",0,0,2342.37,53886,37483,819,70],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Semelhante 1% outubro - AD 01",0,0,1496.33,35414,21211,447,39],["[BARATA][ONGOING][WHATSAPP] - MULTIPROPRIEDADE - CONVERSAS",0,2,1197.43,42602,12604,473,74],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Semelhante 1% poehma e mandala - Vídeo Samanta R1",0,0,974.12,17947,10174,479,25],["[BARATA] [INSIDE SALES] [AQUISIÇÃO] [FORMNATIVO] [HOT] - MULTIPROPRIEDADE",0,0,905.96,21615,17044,327,13],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS ESTÁTICO ELEVENLABS",0,2,696.88,55330,24411,592,100],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - RMKT",0,0,626.25,7222,531,70,3],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE -LISTA CONTRATOS 1% - AD 02",0,0,377.77,10191,7229,99,7],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Contratos fechados kommo 1% - Vídeo Samanta R1",0,0,376.24,8308,5745,214,12],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS ESTÁTICO",0,2,318.68,19537,10895,211,28],["[BARATA][ONGOING][WHATSAPP] - JEFERSON MULTIPROPRIEDADE - CONVERSAS (cópia)",0,2,204.73,2947,1480,42,6],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 2% LISTA 01 POEHMA",0,0,182.33,4148,4061,38,2],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 3% LISTA 01 POEHMA",0,0,167.85,4443,4357,50,1],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Semelhante 1% outubro - Vídeo Carlos R4",0,0,116.44,2618,2298,28,1],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - LAL 1% LISTA 01 POEHMA",0,0,111.13,2400,2246,24,1],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE - Lookalike gpk3+aquan 1% - Vídeo Samanta R1",0,0,63.11,961,814,26,0],["[BARATA][ONGOING][FORMNATIVO] - MULTIPROPRIEDADE (teste)",0,0,9.94,231,218,1,0]]},"trab":{"a":[["[BARATA][ONGOING][YAYFORM] - TRABALHISTA - GENERICA (1)",0,1,3416.92,118046,68727,2490,207],["[BARATA][TESTE][YFSUBMIT] - ACIDENTE DE TRABALHO - CONVERSÕES",1,1,3053.4,254831,94355,4578,307],["[BARATA][ONGOING][YAYFORM] - TRABALHISTA - GENERICA",0,1,963.56,43497,27234,1073,65],["[BARATA][ONGOING][YAYFORM] - Trabalhista Generica (3)",0,1,181.08,4039,2950,129,1],["[BARATA][ONGOING][YAYFORM] - Trabalhista Generica (2)",0,1,116.37,6755,5882,76,1]]},"outros":{"a":[["Impulsionamentos de posts (Instagram)",0,3,3463.31,623644,409823,10581,9544],["[EVOLVE] Captação de seguidores",0,4,2461.84,425650,285858,3685,7371]]}}}],"d":{"multi":[["10/03",74.14,3],["10/04",117.26,1],["10/05",349.28,4],["10/06",314.27,6],["10/07",108.46,1],["10/08",102.54,3],["10/09",103.15,4],["10/10",100.01,4],["10/11",141.09,2],["10/12",99.05,2],["10/13",125.92,4],["10/14",113.2,2],["10/15",84.87,4],["10/16",81.51,0],["10/17",88.25,0],["10/18",126.87,1],["10/19",121.17,3],["10/20",107.58,7],["10/21",111.37,4],["10/22",99.06,2],["10/23",77.09,1],["10/24",90.97,0],["10/25",124.59,4],["10/26",125.26,5],["10/27",110.24,3],["10/28",93.04,2],["10/29",89.93,1],["10/30",91.95,3],["10/31",99.34,2],["11/01",125.57,1],["11/02",116.57,3],["11/03",104.72,5],["11/04",111.82,4],["11/05",100.35,2],["11/06",87.9,3],["11/07",86.67,1],["11/08",124.32,2],["11/09",112.32,4],["11/10",97.48,1],["11/11",129.36,6],["11/12",86.19,4],["11/13",94.5,1],["11/14",87.85,1],["11/15",140.17,3],["11/16",59.25,2]],"trab":[["10/03",38.49,2],["10/04",57.36,3],["10/05",44.07,4],["10/06",39.54,3],["10/07",44.37,7],["10/08",44.69,4],["10/09",43.81,1],["10/10",41.14,3],["10/11",60.02,9],["10/12",51.07,2],["10/13",45.47,2],["10/14",45.02,3],["10/15",36.71,3],["10/16",38.76,1],["10/17",37.88,5],["10/18",55.29,7],["10/19",48.96,6],["10/20",44.02,2],["10/21",43.88,6],["10/22",43.48,2],["10/23",39.6,6],["10/24",39.77,4],["10/25",59.56,5],["10/26",38.01,1],["10/27",53.34,5],["10/28",42.88,5],["10/29",39.06,6],["10/30",44.11,6],["10/31",38.0,5],["11/01",58.45,8],["11/02",53.5,8],["11/03",44.2,4],["11/04",42.98,4],["11/05",38.2,1],["11/06",39.6,2],["11/07",37.65,5],["11/08",56.05,7],["11/09",52.96,7],["11/10",42.44,9],["11/11",45.56,9],["11/12",41.83,3],["11/13",41.62,2],["11/14",34.44,3],["11/15",58.64,8],["11/16",17.05,1]]},"t":["Leads (formulário)","Formulários (site)","Conversas iniciadas","Visitas ao perfil","Cliques / engajamento"],"m":{"conta":"1146723006758207","cliente":"Barata Silva & Martinewski Advogados","atualizado":"16/11/2026 16:20 UTC"},"b":[[1,"Calendário editorial de novembro","15 posts aprovados e programados até 30/11."],[1,"Estrutura de campanha de novembro no Meta Ads","Montada e rodando desde o início do mês."],[1,"Apresentação da tese de negativa de plano de saúde","Entregue ao escritório."],[0,"Aprofundar o entendimento dos setores","Mapear a rotina e a necessidade de cada área para construir o front-end do sistema interno."],[0,"Apresentação da tese de superendividamento","Mesmo formato usado na tese de negativa de plano de saúde."],[0,"Posts de aniversário do fim de novembro","Dois posts a programar."]]};
+
+var GOLD="#C9A227";
+function nf(v,d){d=d||0;return v.toLocaleString("pt-BR",{minimumFractionDigits:d,maximumFractionDigits:d});}
+function brl(v){return v==null?"—":"R$ "+nf(v,2);}
+function brl0(v){return v==null?"—":"R$ "+nf(v,0);}
+function num(v){return v==null?"—":nf(v);}
+function pct(v){return v==null?"—":nf(v,2)+"%";}
+function dec(v){return v==null?"—":nf(v,2);}
+function fmt(v,f){return f=="brl"?brl(v):f=="brl0"?brl0(v):f=="pct"?pct(v):f=="dec"?dec(v):num(v);}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+function totais(rows){
+  var s=0,imp=0,alc=0,cli=0,res=0;
+  for(var i=0;i<rows.length;i++){s+=rows[i][3];imp+=rows[i][4];alc+=rows[i][5];cli+=rows[i][6];res+=rows[i][7];}
+  return {campanhas:rows.length,investimento:Math.round(s*100)/100,impressoes:imp,alcance:alc,cliques:cli,resultados:res,
+    cpm:imp?(s/imp)*1000:null,ctr:imp?(cli/imp)*100:null,cpc:cli?s/cli:null,cpa:res?s/res:null,freq:alc?imp/alc:null};
+}
+function delta(cur,prev,invert){
+  if(cur==null||prev==null||prev===0) return '<span class="d flat">sem base de comparação</span>';
+  var d=((cur-prev)/prev)*100, flat=Math.abs(d)<0.05, good=invert?d<0:d>0;
+  var cls=flat?"flat":(good?"up":"down"), ar=flat?"–":(d>0?"▲":"▼");
+  return '<span class="d '+cls+'">'+ar+" "+nf(Math.abs(d),1)+'%<span class="m"> vs. período anterior</span></span>';
+}
+function kpi(label,value,f,prev,invert,hero,nota){
+  return '<div class="k'+(hero?" hero":"")+'"><div class="kl">'+label+'</div><div class="kv">'+fmt(value,f)+'</div>'+
+    (nota?'<span class="d flat">'+nota+'</span>':delta(value,prev==null?null:prev,invert))+'</div>';
+}
+function chart(serie){
+  if(!serie||!serie.length) return "";
+  var W=1000,H=220,PADL=8,PADR=8,PADT=16,PADB=26,n=serie.length;
+  var maxS=1,maxR=1,i;
+  for(i=0;i<n;i++){if(serie[i][1]>maxS)maxS=serie[i][1];if(serie[i][2]>maxR)maxR=serie[i][2];}
+  var bw=(W-PADL-PADR)/n;
+  function x(i){return PADL+i*bw;}
+  function yS(v){return PADT+(H-PADT-PADB)*(1-v/maxS);}
+  function yR(v){return PADT+(H-PADT-PADB)*(1-v/maxR);}
+  var bars="",pts="",path="",step=Math.ceil(n/7),labels="";
+  for(i=0;i<n;i++){
+    var h=Math.max(H-PADB-yS(serie[i][1]),0);
+    bars+='<rect x="'+(x(i)+bw*0.18)+'" y="'+yS(serie[i][1])+'" width="'+(bw*0.64)+'" height="'+h+'" rx="2" fill="rgba(201,162,39,0.30)"/>';
+    path+=(i===0?"M ":"L ")+(x(i)+bw/2)+" "+yR(serie[i][2])+" ";
+    pts+='<circle cx="'+(x(i)+bw/2)+'" cy="'+yR(serie[i][2])+'" r="2.2" fill="#5FA8FF"/>';
+    if(i%step===0){var p=serie[i][0].split("/");labels+='<text x="'+(x(i)+bw/2)+'" y="'+(H-8)+'" fill="#7F93AE" font-size="11" text-anchor="middle">'+p[1]+"/"+p[0]+'</text>';}
+  }
+  return '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;height:auto;display:block">'+bars+
+    '<path d="'+path+'" fill="none" stroke="#5FA8FF" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>'+
+    pts+'<line x1="0" x2="'+W+'" y1="'+(H-PADB)+'" y2="'+(H-PADB)+'" stroke="rgba(255,255,255,0.07)"/>'+labels+'</svg>';
+}
+function tabela(rows){
+  if(!rows||!rows.length) return '<div style="color:#7F93AE;padding:28px 4px;font-size:14px">Nenhuma campanha com veiculação no período selecionado.</div>';
+  var h='<div class="wrap"><table><thead><tr><th class="l">Campanha</th><th>Investimento</th><th>Resultados</th><th>Custo/result.</th><th>Impressões</th><th>Alcance</th><th>CPM</th><th>CTR</th><th>CPC</th></tr></thead><tbody>';
+  for(var i=0;i<rows.length;i++){
+    var c=rows[i],t=totais([c]);
+    h+='<tr><td class="l"><div class="cn"><span class="dot'+(c[1]?" on":"")+'"></span><span><span>'+esc(c[0])+'</span><span class="cm">'+(c[1]?"Ativa":"Pausada")+" · "+esc(DATA.t[c[2]])+'</span></span></div></td>'+
+       '<td>'+brl(t.investimento)+'</td><td style="font-weight:600">'+num(t.resultados)+'</td><td>'+brl(t.cpa)+'</td>'+
+       '<td>'+num(t.impressoes)+'</td><td>'+num(t.alcance)+'</td><td>'+brl(t.cpm)+'</td><td>'+pct(t.ctr)+'</td><td>'+brl(t.cpc)+'</td></tr>';
+  }
+  return h+"</tbody></table></div>";
+}
+function backlog(){
+  function bloco(titulo,itens,ok){
+    var h='<div style="margin-bottom:34px"><div class="bg">'+titulo+' <span style="color:'+(ok?"#49C98A":GOLD)+'">('+itens.length+')</span></div>';
+    for(var i=0;i<itens.length;i++){
+      var ic=ok?"✓":'<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.6" stroke="'+GOLD+'" stroke-width="1.5"/><path d="M10.6 10.6L14 14" stroke="'+GOLD+'" stroke-width="1.5" stroke-linecap="round"/></svg>';
+      h+='<div class="bi'+(ok?" ok":"")+'"><div class="bic">'+ic+'</div><div><div class="bit">'+esc(itens[i][1])+'</div><div class="bid">'+esc(itens[i][2])+'</div></div></div>';
+    }
+    return h+"</div>";
+  }
+  var f=DATA.b.filter(function(x){return x[0]===1;}),p=DATA.b.filter(function(x){return x[0]===0;});
+  return '<div style="max-width:820px">'+bloco("Concluído",f,true)+bloco("Em aberto",p,false)+"</div>";
+}
+
+var ABA="multi", PER="mes";
+var TABS=[["multi","Multipropriedade","Prioritária"],["trab","Trabalhista",null],["backlog","Backlog",null]];
+
+function render(){
+  var periodo=null,i;
+  for(i=0;i<DATA.p.length;i++) if(DATA.p[i].i===PER) periodo=DATA.p[i];
+  document.getElementById("sub").innerHTML="Meta Ads · conta "+DATA.m.conta+" · atualizado em "+DATA.m.atualizado;
+  document.getElementById("rodape").innerHTML=esc(DATA.m.cliente)+" · OAB/RS 10.147";
+  document.getElementById("perinfo").innerHTML=periodo.r+(periodo.c?" · comparando com "+periodo.c:"");
+  document.getElementById("selbox").className=(ABA==="backlog"?"inv":"");
+
+  var nav="";
+  for(i=0;i<TABS.length;i++){
+    nav+='<button class="'+(ABA===TABS[i][0]?"on":"")+'" data-t="'+TABS[i][0]+'">'+TABS[i][1]+(TABS[i][2]?'<span class="tag">'+TABS[i][2]+"</span>":"")+"</button>";
+  }
+  document.getElementById("nav").innerHTML=nav;
+  var bts=document.getElementById("nav").getElementsByTagName("button");
+  for(i=0;i<bts.length;i++) bts[i].onclick=function(){ABA=this.getAttribute("data-t");render();};
+
+  var el=document.getElementById("conteudo");
+  if(ABA==="backlog"){el.innerHTML=backlog();return;}
+
+  var g=periodo.g[ABA], rows=g.a, t=totais(rows), a=g.b?totais(g.b):null;
+  var h='<div class="grid1">'+
+    kpi("Investimento",t.investimento,"brl0",a?a.investimento:null,false,true)+
+    kpi("Resultados",t.resultados,"num",a?a.resultados:null,false,true)+
+    kpi("Custo por resultado",t.cpa,"brl",a?a.cpa:null,true,true)+
+    kpi("Campanhas no período",t.campanhas,"num",null,false,true,t.campanhas===1?"1 campanha com veiculação":t.campanhas+" campanhas com veiculação")+
+    '</div><div class="grid2">'+
+    kpi("Impressões",t.impressoes,"num",a?a.impressoes:null)+
+    kpi("Alcance",t.alcance,"num",a?a.alcance:null)+
+    kpi("CPM",t.cpm,"brl",a?a.cpm:null,true)+
+    kpi("CTR",t.ctr,"pct",a?a.ctr:null)+
+    kpi("CPC",t.cpc,"brl",a?a.cpc:null,true)+
+    kpi("Frequência",t.freq,"dec",a?a.freq:null,true)+
+    '</div>'+
+    '<section class="card"><div class="chead"><div><div class="ct">Investimento e resultados por dia</div>'+
+    '<div class="cs">Últimos 45 dias, independente do período selecionado acima</div></div>'+
+    '<div class="leg"><span><span class="sw1"></span>Investimento</span><span><span class="sw2"></span>Resultados</span></div></div>'+
+    chart(DATA.d[ABA])+'</section>'+
+    '<div class="tt">Campanhas no período <span>· '+periodo.r+'</span></div>'+
+    tabela(rows)+
+    '<p class="nota">Resultados seguem a métrica de otimização de cada campanha: leads de formulário nativo, envios de formulário no site e conversas iniciadas no WhatsApp. O alcance é somado por campanha, então pode haver sobreposição de pessoas entre campanhas que rodaram ao mesmo tempo. Janela de atribuição padrão da conta: 1 dia de visualização e 7 dias de clique.</p>';
+  el.innerHTML=h;
+}
+
+(function(){
+  var s=document.getElementById("per"),o="";
+  for(var i=0;i<DATA.p.length;i++) o+='<option value="'+DATA.p[i].i+'"'+(DATA.p[i].i===PER?" selected":"")+">"+DATA.p[i].l+"</option>";
+  s.innerHTML=o;
+  s.onchange=function(){PER=this.value;render();};
+  render();
+})();
+
+</script>
+</body>
+</html>
